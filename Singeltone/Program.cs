@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //GCard gCard01 = GCard.GetCard();
+            //GCard gCard02 = GCard.GetCard();
+
+            GCard gCard01 = GCard.SingeltonCard;
+            GCard gCard02 = GCard.SingeltonCard;
+
+            Console.WriteLine($"gCard01.GetHashCode() :{gCard01.GetHashCode()}");
+            Console.WriteLine($"gCard02.GetHashCode() :{gCard02.GetHashCode()}");
         }
     }
 }
